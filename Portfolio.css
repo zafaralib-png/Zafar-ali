@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    background: url(images/bg.jpeg) no-repeat center / cover;
+    padding: 50px 5%;
+    
+}
+.header{
+    position: relative;
+    height: 100%;
+    background: rgba(255,255,255,.1);
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 30px;
+    backdrop-filter: blur(30px);
+    transform: scale(0);
+    opacity: 0;
+    animation: zoom-in 1s ease forwards;
+}
+@keyframes zoom-in {
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+   
+  
+}
+
+.logo{
+    font-size: 25px;
+    color: #ffff;
+    font-weight: 600;
+}
+.navbar a{
+  font-size: 18px;
+  color: white;
+  font-weight:500;
+  margin-left: 35px;
+  border-bottom: 2px solid transparent;
+  transition: .5s;
+}
+.navbar a:hover,
+.navbar a.active
+{
+    border-color: white;
+}
+.home{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 50px;
+  padding: 30px 5% 0;
+  color: white;
+}
+
+.home h1{
+    font-size: 62px;
+}
+.home h2{
+    font-size: 25px;
+}
+.home p{
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 5px 0;
+}
+.btn button{
+    float: left;
+   padding: 10px;   
+   margin: 5px 0 0 10px;
+   border-radius: 8px; 
+   border: 2px solid transparent;
+   box-shadow: 0 0 20px white;
+   font-weight: 500;
+   width: 150px;
+}
+.btn button:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.home-img .img-box{
+    position: relative;
+    width: 28vw;
+    height: 28vw;
+    border: 2px solid white;
+    border-radius: 50%;
+     box-shadow: 0 0 20px white;
+     overflow: hidden;
+}
+.home-img .img-box img{
+    position: absolute;
+    display: block;
+    top: 30px;
+    width: 100%;
+    object-fit: cover;
+}
+ .image-box{
+    margin-top: 5%;
+    position: relative;
+    width: 28vw;
+    height: 28vw;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 20px white;
+    overflow: hidden;
+
+}
+
+
+
+.section .home{
+    transition: .1s ease;
+    animation: slideright 1s ease forwards ;
+    opacity: 0;
+}
+@keyframes slideright{
+    0%{
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+}
+
+.image-box img{
+    position: absolute;
+    display: block;
+    top: 30px;
+    width: 100%;
+    object-fit: cover;
+}
+.info p{
+    width: 550px;
+    text-align: justify;
+   
+}
+.info button{
+    margin-top: 10px;
+}
+   /* Css for Services */
+.boxes .box{
+    margin: 8% 5.5%;
+    width: 250px;
+    height: 350px;
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    float: left;
+
+}
+.boxes .box h2{
+    color: white;
+    margin: 50px 20px ;
+}
+.boxes .box h1{
+    color: white;
+    text-align: center;
+    margin: 5% 0;
+}
+.contact .box{
+   margin: 8% auto;
+    width: 500px;
+    height: 370px;
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    transition: 1s ease;
+    animation: bottom 1s ease forwards;
+    
+}
+@keyframes bottom{
+    0%{
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.contact .box input{
+    width: 80%;
+    height: 12%;
+    margin: 5% 0 0 10%;
+    border-radius: 8px;
+    padding: 10px;
+
+}
+.contact .box textarea{
+    width: 80%;
+    height: 20%;
+    margin: 5% 0 0 10%;
+    border-radius: 8px;
+    padding: 10px;
+
+
+}
+.contact .box button{
+    margin: 2% 35%;
+}
+

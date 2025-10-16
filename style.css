@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,0.8);
+    padding: 20px 12% ;
+    height: 60px;
+    line-height: 60px;
+}
+.header h1{
+    color: orangered;
+}
+nav ul li{
+    display: inline;
+    justify-content: center;
+    margin: 10px;
+}
+nav ul li a{
+    color: white;
+    font-size: 24px;
+}
+.btn button{
+font-size: 18px;
+padding: 8px;
+border-radius: 8px;
+border: none;
+   
+}
+.section{
+     width: 100%;
+     min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    padding: 30px 12% 0;
+}
+
+
+.section-about h3{
+    font-size: 42px;
+}
+.section-about h1{
+    font-size: 62px;
+    
+}
+.section-about p
+{
+    width: 550px;
+    font-size: 18px;
+    margin: 20px 0;
+   
+}
+.section-about span{
+    color: orangered;
+}
+.btn-1{
+  padding: 10px;
+  color: white;
+  background-color: rgba(0,0,0.5);
+  border: none;
+  font-size: 20px;
+  border-radius: 8px;
+  transition: .5s ease;
+}
+.btn-2{
+  padding: 10px;
+  color: white;
+  background-color: orangered;
+  border: none;
+  font-size: 20px;
+  border-radius: 8px;
+  transition: .5s ease;
+}
+.btn-1:hover{
+    background-color: orangered;
+    color: white;
+}
+ .btn-2:hover{
+    background-color: rgba(0,0,0.5);
+    color: white;
+}
+
+.image-box img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  
+}
